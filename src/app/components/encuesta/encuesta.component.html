@@ -1,0 +1,11 @@
+<h2 class="mt-4">Encuestas al dia: </h2>
+<hr>
+<div class="row">
+
+    <div style="display: block">
+        <canvas baseChart width="600" height="400" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType">
+        </canvas>
+    </div>
+
+</div>
+<button mat-button mat-raised-button color="primary" class="btn btn-success btn-block" (click)="randomize()">Actualiza Datos</button>
